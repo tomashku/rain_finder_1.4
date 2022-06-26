@@ -11,6 +11,12 @@
 		23BF43A02868B9A100B6658B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF439F2868B9A100B6658B /* ContentView.swift */; };
 		23BF43A22868B9A200B6658B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BF43A12868B9A200B6658B /* Assets.xcassets */; };
 		23BF43A52868B9A200B6658B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BF43A42868B9A200B6658B /* Preview Assets.xcassets */; };
+		23BF43AC2868B9B600B6658B /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF43AB2868B9B600B6658B /* Airport.swift */; };
+		23BF43AE2868BA2800B6658B /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF43AD2868BA2800B6658B /* DataProvider.swift */; };
+		23BF43B12868BFB100B6658B /* Airports.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23BF43AF2868BFB100B6658B /* Airports.xcdatamodeld */; };
+		23BF43B42868BFFD00B6658B /* AirportEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF43B22868BFFD00B6658B /* AirportEntity+CoreDataClass.swift */; };
+		23BF43B52868BFFD00B6658B /* AirportEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF43B32868BFFD00B6658B /* AirportEntity+CoreDataProperties.swift */; };
+		23BF43B72868C05600B6658B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF43B62868C05600B6658B /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		23BF439F2868B9A100B6658B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23BF43A12868B9A200B6658B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BF43A42868B9A200B6658B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23BF43AB2868B9B600B6658B /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		23BF43AD2868BA2800B6658B /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		23BF43B02868BFB100B6658B /* Airports.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Airports.xcdatamodel; sourceTree = "<group>"; };
+		23BF43B22868BFFD00B6658B /* AirportEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23BF43B32868BFFD00B6658B /* AirportEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23BF43B62868C05600B6658B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,8 @@
 		23BF43912868B9A100B6658B = {
 			isa = PBXGroup;
 			children = (
+				23BF43B22868BFFD00B6658B /* AirportEntity+CoreDataClass.swift */,
+				23BF43B32868BFFD00B6658B /* AirportEntity+CoreDataProperties.swift */,
 				23BF439C2868B9A100B6658B /* rain_finder_1.4 */,
 				23BF439B2868B9A100B6658B /* Products */,
 			);
@@ -53,6 +67,10 @@
 			children = (
 				23BF439D2868B9A100B6658B /* rain_finder_1_4App.swift */,
 				23BF439F2868B9A100B6658B /* ContentView.swift */,
+				23BF43B62868C05600B6658B /* Persistence.swift */,
+				23BF43AF2868BFB100B6658B /* Airports.xcdatamodeld */,
+				23BF43AD2868BA2800B6658B /* DataProvider.swift */,
+				23BF43AB2868B9B600B6658B /* Airport.swift */,
 				23BF43A12868B9A200B6658B /* Assets.xcassets */,
 				23BF43A32868B9A200B6658B /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BF43B52868BFFD00B6658B /* AirportEntity+CoreDataProperties.swift in Sources */,
+				23BF43B72868C05600B6658B /* Persistence.swift in Sources */,
+				23BF43AC2868B9B600B6658B /* Airport.swift in Sources */,
+				23BF43B12868BFB100B6658B /* Airports.xcdatamodeld in Sources */,
+				23BF43B42868BFFD00B6658B /* AirportEntity+CoreDataClass.swift in Sources */,
 				23BF43A02868B9A100B6658B /* ContentView.swift in Sources */,
+				23BF43AE2868BA2800B6658B /* DataProvider.swift in Sources */,
 				23BF439E2868B9A100B6658B /* rain_finder_1_4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +363,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23BF43AF2868BFB100B6658B /* Airports.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23BF43B02868BFB100B6658B /* Airports.xcdatamodel */,
+			);
+			currentVersion = 23BF43B02868BFB100B6658B /* Airports.xcdatamodel */;
+			path = Airports.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 23BF43922868B9A100B6658B /* Project object */;
 }
